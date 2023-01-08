@@ -1,4 +1,16 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultzone: http://localhost:8761/eureka/ 
+  instance: 
+   hostname: localhost
+
+
 Server:
   Port: 9001
-  
-  
+
+spring:
+ application: 
+  name: DOCUMENT-SERVICE  
